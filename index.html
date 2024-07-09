@@ -54,25 +54,29 @@
         <p>Enter your favorite movies and their release year</p>
         <form action="/SUBMIT">
             <label for="title">Title:</label>
-            <input type="text" id="title" name="title"><br>
+            <input type="text" id="title" name="title" required/><br>
             <label for="director">Director:</label>
-            <input type="text" id="director" name="director"><br>
+            <input type="text" id="director" name="director" required/><br>
             <label for="year">Year:</label>
-            <input type="text" id="year" name="year"><br>
+            <input type="text" id="year" name="year" required/><br>
             <label for="genre">Genre:</label>
-            <select>
+            <select id="genre" name="genre" required>
                 <option value="Sci-Fi">Sci-Fi</option>
                 <option value="Action">Action</option>
                 <option value="Drama">Drama</option>
                 <option value="Comedy">Comedy</option>
             </select><br>
             <label for="release_date">Release Date:</label>
-            <input type="date" id="release_date" name="release_date"><br>
+            <input type="date" id="release_date" name="release_date" required/><br>
             <label for="image">Upload Image:</label>
             <input type="file" id="image" name="image"><br>
             <input type="submit" value="Submit">
         </form>
     </section>
+    <footer>
+        <P>Copyright &copy; 2025 Movie Database</P>
+        <p>For more information, visit <a href="http://www.imdb.com">IMDB </a> Page</p>
+    </footer>
     
 </body>
 
