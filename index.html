@@ -12,8 +12,10 @@
     <header class="main-header">
         <h1>Welcome To Movie Database</h1>
     </header>
-    <section>
-        <img src="https://i.pinimg.com/originals/e1/57/7e/e1577e1559bb7b9dd42f1242557bae3a.jpg"/>
+    <section class="info-section">
+        <div class='cover-img'>
+        <img src="https://i.pinimg.com/originals/1a/1e/aa/1a1eaacc07ea544d9911f88c7df152d6.jpg" />
+        </div>
         <h2>Discover Popular movie</h2>
         <p>Explore our collection of timeless and blockbusters hits.<br/>
         <i>Find Movies That Captive and Inspire</i>
@@ -22,35 +24,47 @@
             Movie Database
         </p>
     </section>
-    <section>
-        <table border="5">
-            <tr> 
-                <th>Title</th>
-                <th>Director</th>
-                <th>Year</th>
-                <th>Genre</th>
-            </tr>
-            <tr>
-                <td>Star Wars</td>
-                <td>George Lucas</td>
-                <td>1977</td>
-                <td>Sci-Fi</td>
-            </tr>
-            <tr>
-                <td>Dark</td>
-                <td>Christopher Nolan</td>
-                <td>2008</td>
-                <td>Sci-Fi</td>
-            </tr>
-            <tr>
-                <td>The See</td>
-                <td>James Cameron</td>
-                <td>2009</td>
-                <td>Sci-Fi</td>
-            </tr>
-        </table>
+    <section class="movie-section">
+        <div class="table">
+            <table border="">
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                </tr>
+                <tr>
+                    <td>Star Wars</td>
+                    <td>George Lucas</td>
+                    <td>1977</td>
+                    <td>Sci-Fi</td>
+                </tr>
+                <tr>
+                    <td>Dark</td>
+                    <td>Christopher Nolan</td>
+                    <td>2008</td>
+                    <td>Sci-Fi</td>
+                </tr>
+                <tr>
+                    <td>The See</td>
+                    <td>James Cameron</td>
+                    <td>2009</td>
+                    <td>Sci-Fi</td>
+                </tr>
+            </table>
+        </div>
     </section>
-    <section>
+    <section class="top-movies-section">
+        <h2>Top 5 Movies</h2>
+        <ol>
+            <li>Star Wars</li>
+            <li>Dark</li>
+            <li>The See</li>
+            <li>Interstellar</li>
+            <li>Parasite</li>
+        </ol>
+    </section>
+    <section class="form-section">
         <h2>Enter your favorite movies</h2>
         <p>Enter your favorite movies and their release year</p>
         <form action="/SUBMIT">
