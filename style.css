@@ -14,7 +14,7 @@ body{
     font-weight: bold;
 }
 .info-section, .movie-section, .top-movies-section, .form-section{
-    background-color: rgb(20, 11, 76);
+    background-color: rgb(49, 44, 81);
     color: white;
     margin: 20px 150px;
     padding: 20px;
@@ -71,8 +71,4 @@ table {
         background-color: rgb(225, 225, 225);
         color: rgb(20, 11, 76)
     }
-    td {
-    
-        background-color: rgb(255, 3, 3);
-        color: rgb(10, 10, 10)
-    }
+}
