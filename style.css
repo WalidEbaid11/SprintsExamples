@@ -14,7 +14,7 @@ body{
     font-weight: bold;
 }
 .info-section, .movie-section, .top-movies-section, .form-section{
-    background-color: rgb(49, 44, 81);
+    background-color: rgb(39, 38, 45);
     color: white;
     margin: 20px 150px;
     padding: 20px;
@@ -24,11 +24,15 @@ body{
     border-radius: 10px;
     box-shadow : 0 ,5px ,10px , rgb(0, 0, 0, 0, 1);
     h2{
-        color: #1e1c1c;
+        color: #fafafa;
         text-align: center;
         font-size: 1.5em;
         font-weight: bold;
-        font-family:'Courier New', Courier, monospace, Helvetica, sans-serif;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    P{
+        color: #000000;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
     }
 }
 .info-section{
@@ -68,7 +72,62 @@ table {
     }
     th{
         font-weight: bold;
-        background-color: rgb(225, 225, 225);
-        color: rgb(20, 11, 76)
+        background-color: rgb(53, 44, 88);
+        color: rgb(244, 244, 244)
     }
+}
+
+.top-movies-section{
+    text-align: left;
+    ol{
+        text-align: left;
+        
+    }
+}
+.form-section{
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    flex-direction:column ;
+    align-items: center;
+input,select,bottom{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px ;
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    }
+label{
+    margin: 10px 5px; 
+}
+button{
+    width: 15%;
+    font-size: 1em;
+    background-color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(122, 9, 9);
+    transition: background-color 0.05s ease-in-out;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0, 5px, 10px, rgb(0, 0, 0, 0, 1);
+}
+    
+}
+.footer{
+    background-color: rgb(32, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+
 }
