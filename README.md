@@ -65,14 +65,9 @@ This repository contains the foundational HTML structure for a Movie Database we
     ```
 5. **Create a pull request**.
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 <p align="center">
   Made with ❤️ by <a href="https://github.com/WalidEbaid11">WalidEbaid11</a>
 </p>
-```
 
