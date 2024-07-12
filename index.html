@@ -2,98 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <title>Movie Database</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="main-header">
-        <h1>Welcome To Movie Database</h1>
+        <div class="logo">Movie Database</div> <!-- Navbar added here -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#directors">Directors</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="info-section">
-        <div class='cover-img'>
-        <img src="https://i.pinimg.com/originals/1a/1e/aa/1a1eaacc07ea544d9911f88c7df152d6.jpg" />
-        </div>
-        <h2>Discover Popular movie</h2>
-        <p>Explore our collection of timeless and blockbusters hits.<br/>
-        <i>Find Movies That Captive and Inspire</i>
+        <img class="cover-img" src="https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg"
+            alt="Movie Cover Image" />
+        <h2>Discover Popular Movies</h2>
+        <p>Explore our collection of timeless and blockbuster hits.<br />
+            <i>Find movies that captivate and inspire</i>
         </p>
         <p align="right">
-            Movie Database
+            Movie Database is your number 1 destination
         </p>
     </section>
     <section class="movie-section">
-        <div class="table">
-            <table border="">
-                <tr>
-                    <th>Title</th>
-                    <th>Director</th>
-                    <th>Year</th>
-                    <th>Genre</th>
-                </tr>
-                <tr>
-                    <td>Star Wars</td>
-                    <td>George Lucas</td>
-                    <td>1977</td>
-                    <td>Sci-Fi</td>
-                </tr>
-                <tr>
-                    <td>Dark</td>
-                    <td>Christopher Nolan</td>
-                    <td>2008</td>
-                    <td>Sci-Fi</td>
-                </tr>
-                <tr>
-                    <td>The See</td>
-                    <td>James Cameron</td>
-                    <td>2009</td>
-                    <td>Sci-Fi</td>
-                </tr>
-            </table>
-        </div>
+        <table class="movie-table">
+            <tr>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Year</th>
+                <th>Genre</th>
+            </tr>
+            <tr>
+                <td><a href="pages/movie.html?id=1">Oppenheimer</a></td>
+                <td><a href="pages/director.html?id=1">Christopher Nolan</a></td>
+                <td>2023</td>
+                <td>Drama</td>
+            </tr>
+            <tr>
+                <td><a href="movie.html?id=1">The Godfather</a></td>
+                <td><a href="director.html?name=francis-ford-coppola">Francis Ford Coppola</a></td>
+                <td>1972</td>
+                <td>Crime</td>
+            </tr>
+        </table>
     </section>
     <section class="top-movies-section">
         <h2>Top 5 Movies</h2>
         <ol>
-            <li>Star Wars</li>
-            <li>Dark</li>
-            <li>The See</li>
-            <li>Interstellar</li>
-            <li>Parasite</li>
+            <li><strong>The Godfather</strong></li>
+            <li>The Shawshank Redemption</li>
+            <li>The Godfather Part II</li>
+            <li>The Dark Knight</li>
+            <li>The Lion King</li>
         </ol>
     </section>
     <section class="form-section">
-        <h2>Enter your favorite movies</h2>
-        <p>Enter your favorite movies and their release year</p>
-        <form action="/SUBMIT">
+        <h2>Enter Your Favorite Movie</h2>
+        <p>Help us build our community by sharing your favorite movie</p>
+        <form action="/submit">
             <label for="title">Title:</label>
-            <input type="text" id="title" name="title" required/>
+            <input type="text" id="title" name="title" required />
             <label for="director">Director:</label>
-            <input type="text" id="director" name="director" required/>
-            <label for="year">Year:</label>
-            <input type="text" id="year" name="year" required/>
+            <input type="text" id="director" name="director" required />
             <label for="genre">Genre:</label>
             <select id="genre" name="genre" required>
-                <option value="Sci-Fi">Sci-Fi</option>
-                <option value="Action">Action</option>
-                <option value="Drama">Drama</option>
-                <option value="Comedy">Comedy</option>
-            </select><br>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+            </select><br />
             <label for="release_date">Release Date:</label>
-            <input type="date" id="release_date" name="release_date" required/>
+            <input type="date" id="release_date" name="release_date" required />
             <label for="image">Upload Image:</label>
-            <input type="file" id="image" name="image"><br>
+            <input type="file" id="image" name="image">
             <button type="submit">Submit</button>
         </form>
     </section>
-    <footer class="footer">
-        <P>Copyright &copy; 2025 Movie Database</P>
-        <p>For more information, visit <a href="http://www.imdb.com">IMDB </a> Page</p>
+    <footer>
+        <p>&copy; 2025 Movie Database</p><br />
+        <p>For more information, visit our <a href="https://www.imdb.com">IMDB</a> page</p>
     </footer>
-    
 </body>
-
 
 </html>
